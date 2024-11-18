@@ -1,6 +1,6 @@
 package org.example.everybody.codes
 
-import org.example.readFilesAsLines
+import org.example.readFile
 
 val map = mapOf(
     'B' to 1,
@@ -31,16 +31,16 @@ fun day1Pt3(input: String): Int = input.chunked(3).fold(0) { acc, c ->
 fun main() {
     println("Part 1")
     println(day1("ABBAC"))
-    val input = readFilesAsLines("everybody-codes/everybody_codes_e2024_q01_p1.txt")[0]
+    val input = readFile("everybody-codes/everybody_codes_e2024_q01_p1.txt")
     println(day1(input))
 
     println("Part 2")
     println(day1Pt2("AxBCDDCAxD"))
-    val input2 = readFilesAsLines("everybody-codes/everybody_codes_e2024_q01_p2.txt")[0]
+    val input2 = readFile("everybody-codes/everybody_codes_e2024_q01_p2.txt")
     println(day1Pt2(input2))
 
     println("Part 3")
     println(day1Pt3("xBxAAABCDxCC"))
-    val input3 = readFilesAsLines("everybody-codes/everybody_codes_e2024_q01_p3.txt")[0]
+    val input3 = readFile("everybody-codes/everybody_codes_e2024_q01_p3.txt")
     println(day1Pt3(input3))
 }
